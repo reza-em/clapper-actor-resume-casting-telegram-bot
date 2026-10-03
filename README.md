@@ -1,6 +1,56 @@
+<!-- readme-top -->
+<div align="center">
+
+<img src="docs/banner.svg" alt="Clapper — Actor resume & casting-call Telegram bot" width="100%">
+
 # Clapper — Actor Resume & Casting Call Telegram Bot (Persian/English)
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) ![Python 3](https://img.shields.io/badge/python-3-3776AB?logo=python&logoColor=white) ![Telegram](https://img.shields.io/badge/Telegram-bot-26A5E4?logo=telegram&logoColor=white) [![GitHub stars](https://img.shields.io/github/stars/reza-em/clapper-actor-resume-casting-telegram-bot?style=social)](https://github.com/reza-em/clapper-actor-resume-casting-telegram-bot/stargazers)
+
 > Telegram bot to build actor and film/theatre crew resumes, post casting calls and search talent. Persian-first, English second. Python, SQLite, consent-first personal data handling.
+
+**[فارسی](#-فارسی) · [English](#-english) · [Русский](#-русский) · [Deutsch](#-deutsch)**
+
+⭐ **If this project is useful to you, please give it a star** — it helps other people find it. [**Star on GitHub**](https://github.com/reza-em/clapper-actor-resume-casting-telegram-bot/stargazers) · 🍴 [Fork](https://github.com/reza-em/clapper-actor-resume-casting-telegram-bot/fork) · 🐛 [Issues](https://github.com/reza-em/clapper-actor-resume-casting-telegram-bot/issues)
+
+</div>
+
+## ✨ Highlights
+
+- 📝 **Resume wizard** for actors and crew — one short question at a time, auto-saved progress, preview and confirm
+- 📢 **Casting calls** with role requirements, applications and applicant review
+- 🔎 **Talent search** with combinable filters (city, role, skill, age range, height…)
+- 🔒 **Consent screen** and a "delete all my data" button — consent-first personal-data handling
+- 🛠 Admin panel: quotas/plans, ads, stats, invites, CSV / JSON / ZIP export
+- 🧪 Offline tests with a mocked Telegram API
+
+## 🎬 Demo
+
+<div align="center">
+<img src="docs/demo.gif" alt="Animated illustrative mockup of a Clapper chat" width="320">
+</div>
+
+<div align="center">
+<img src="docs/screenshots.png" alt="Illustrative mockup screenshots of Clapper" width="100%">
+</div>
+
+> 🖼 **These are illustrative mockups**, rendered locally from scripted conversations (see [`docs/mockups`](docs/mockups)). They are not real chats and contain no real user data; names, numbers and links are examples.
+
+## 🚀 Quick start
+
+```bash
+git clone https://github.com/reza-em/clapper-actor-resume-casting-telegram-bot.git && cd clapper-actor-resume-casting-telegram-bot
+python3 -m venv venv && ./venv/bin/pip install -r requirements.txt
+export CAST_TELEGRAM_BOT_TOKEN=...    # from @BotFather
+export OWNER_ID=123456789             # your numeric Telegram id (admin)
+export OWNER_USERNAME=your_username SUPPORT_USERNAME=your_username
+./run.sh
+./venv/bin/python test_offline.py
+```
+
+More options, admin panel and platform notes are in the sections below. Tokens are read only from environment variables — never commit them.
+
+---
 
 ## 🌐 فارسی
 
